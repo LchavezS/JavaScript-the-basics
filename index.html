@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-Full-Course</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <main>
+        <script>
+            //testing the one single line comment
+            
+            console.log ("Hello World!!!");
+            
+            /*Declare the variables in JS*/
+            
+            var myVariable = "FreeCodeCamp" //Data type string
+            console.log(myVariable);
+            
+            myVariable = 1; //Data type number
+            console.log(myVariable);
+            
+            var myName = "Lenin Chavez"; //Convention used in JS is Camel case
+            console.log (myName);
+            
+            /*Operators*/
+            var a;
+            var b = 2;
+            a = 10; // = is the asigment operator
+            console.log(a);
+
+            var a = 5;
+            var b = a;
+            console.log(a);
+            console.log(b); 
+            
+            var x = 9; //Initializing the variable X with the value 9
+            var myLanguage = "Spanish & English ASL";
+
+            console.log(myLanguage);
+            console.log(x);
+
+            var a; //Non-Initializing values. 
+            var b;
+
+            var miVariable =5;
+            // console.log(mivariable); JavaScript is case-sensitive, this will return an error for the below exmples
+            // console.log(MIVARIABLE);
+            // console.log(miVariable);
+
+            console.log(miVariable);
+
+            //Aritmethic Operations
+
+            var suma = 7 + 12;
+            console.log(suma);
+
+            var resta = 15 - 5;
+            console.log(resta); //Return a positive result
+
+            resta = 5 - 15;
+            console.log(resta); //Return a negative result
+
+            resta = 15 - 15;
+            console.log(resta);
+
+            //Multiplication
+
+            var product = 5 * 3;
+            console.log(product);
+
+            product = 9 * 0;
+            console.log(product);
+
+            product = -5 * 6;
+            console.log(product);
+
+            //Division
+
+            var cociente = 20 /2;
+            console.log(cociente);
+
+            cociente = 17 / 31;
+            console.log(cociente);
+
+            cociente = 3 / 0;
+            console.log(cociente);
+            
+
+            //Decimals
+            var myDecimalNumber = 23.4;
+            var weith = 78.34;
+
+            var producto = 3.4 * 10.4;
+            console.log(producto);
+
+            producto = 2.4 * 4;
+            console.log(producto);
+
+            producto = 6 * 8.9;
+            console.log(producto);
+
+            producto = 3.6 * 0;
+            console.log(producto);
+
+            producto = -5.7 * 3.4;
+            console.log(producto);
+
+            //Decimal Division Numbers
+
+            var cociente1 = 5.0 / 2.0;
+            console.log(cociente1);
+            
+            cociente1 = 2.3 / 6.7;
+            console.log(cociente1);
+
+            cociente1 = 4.2 / 0.0;
+            console.log(cociente1);
+
+            var resto = 15 % 5;
+            console.log("El residuo de la división es: " +resto)
+
+            resto = 5 % 0;
+            console.log("El residuo de la división es: "+resto)
+
+            //A variable increment number
+
+            var booksPurchase = 105;
+            console.log(booksPurchase); //Initial data
+
+            //Option 1
+            booksPurchase = booksPurchase + 1;
+            console.log(booksPurchase);
+
+            //Option 2 
+            booksPurchase ++;
+            console.log(booksPurchase);
+
+            //Reduce variable values
+
+            var numberOfStudents = 256;
+            console.log(numberOfStudents);
+
+            //Option 1
+
+            numberOfStudents = numberOfStudents -1;
+            console.log(numberOfStudents);
+
+            //Option 2
+            numberOfStudents --;
+            console.log(numberOfStudents);
+
+            var a = 23;
+
+            // a = a + 5;
+            a += 5;
+            console.log(a);
+
+            var totalSales = 13567.34;
+            console.log(totalSales)
+
+            totalSales += 345.67;
+            console.log(totalSales)
+
+            //Assignment substraction
+
+            var b = 23;
+
+            // b = b - 3;
+            b -= 3;
+            console.log(b);
+
+            var totaldeb = 2446;
+            console.log(totaldeb);
+
+            totaldeb -=345
+            console.log(totaldeb);
+
+            //Multiplication Assignments
+
+            var c = 23;
+            // c = c * 2;
+            c *= 2;
+            console.log(c);
+
+            var salario = 45000;
+            console.log(salario);
+
+            salario *= 5;
+            console.log(salario);
+
+            //Division Assignment
+            var d =39;
+            // d = d / 3;
+            d /= 3;
+            console.log (d );
+
+            var salary = 45000;
+            console.log(salary)
+            salary /= 2;
+            console.log(salary);
+
+            //Variables with String characters
+
+            var name = "Lenin";
+            var lastName = "Chavez";
+
+            // Escape "" string characters
+            var miCadena = "I'm a string character using \"quotation marks\"";
+            console.log(miCadena);
+
+            //String with simple quotation marks
+            var mygoal;
+            mygoal='My goal is to become the best programmer in the world."With CraftCodeLabs"';
+            console.log(mygoal);
+            
+            /*Escape Sequence
+
+            Codigo | Result
+            -----------------
+            \'      Comilla simple
+            \"      Comilla Dobles
+            \\      Barra nvertida
+            \n      Linea nueva 
+            \r      Carriage return
+            \t      Tab
+            \b      Back
+            \f      Salto de pagina
+            .....
+            */
+
+            //Examples
+            console.log("I'm currently learning \"JavaScript\"");
+            console.log("This is an example using \\")
+            console.log("I will be learning: \n HTML \n CSS \n and \n JavaScript")
+
+            //String Concatenation
+            var fullName = "Lenin" + " " + "Chavez"
+            console.log(fullName)
+
+            //Building Strings with Variables
+            var verb = "Program";
+            var message = "I'm learning to " + verb + " with CodeCrafterLabs Team";
+            console.log(message);
+
+            //Adding Variables to Strings
+            var completeMessage = "I'm learning to programming";
+            var finalMessage = "with CodeCrafterLab";
+            console.log(completeMessage);
+            completeMessage += finalMessage;
+            console.log(completeMessage)
+
+            //Lenght Strings
+            var mystr;
+            mystr = "Software Engineer is the best career ever";
+            console.log(mystr.length);
+            
+            //Notation of [], first character
+            /*
+            String: J a v a S c r i p t
+            indice: 0 1 2 3 4 5 6 7 8 9
+            */
+
+            var programmingLanguage = "JavaScript"
+            console.log (programmingLanguage[0]);
+
+            //Inmutable Strings
+            
+            var miCadena = "Jola, World";
+            console.log(miCadena);
+
+            miCadena = "Hola Mundo";
+            console.log(miCadena);
+
+            // miCadena[0] = "H"; //This return an type error 
+
+            //Notation de []: Enesimo Caracter
+
+            var micadena1 = "JavaScript"
+            console.log(micadena1[0]);
+            console.log(micadena1[1]);
+            console.log(micadena1[3]);
+            console.log(micadena1[4]);
+            console.log(micadena1[5]);
+            console.log(micadena1[6]);
+            console.log(micadena1[7]);
+            console.log(micadena1[8]);
+            console.log(micadena1[9]);
+            console.log(micadena1[10]); //Return an Unefine results on console. 
+
+            //Notation []: Last Character
+            var myStr2;
+
+            /*The last index is always -1 length due to we start with 0
+            myStr2.lenght for JavaScript is 10.
+            So, the last index is [10-1=] 9th Index in Programming as per below details
+
+            String: J a v a S c r i p t
+            indice: 0 1 2 3 4 5 6 7 8 9
+            Ubuntu error: i915 0000:00:02.0: [drm] GPU HANG: ecode 9:1:85dffffb, in Xorg [1770] -- Check later
+            */
+           myStr2="JavaScript";
+           console.log(myStr2[myStr2.length -1]);
+
+           // Notation [] from left to right
+           var myStr3 = "JavaScript";
+           var n;
+           n = 7;
+
+           /*El penultimo index es de length -2 por que comenzamos a contar desde 0
+
+           myStr3.length es 10. El penultimo indice es 8.
+
+           String:  J a v a S c r i p t
+            indice: 0 1 2 3 4 5 6 7 8 9
+           
+           */
+
+            console.log(myStr3[myStr3.length - n]);
+
+            //Empty words - Palabras en blanco 
+            
+
+
+
+            
+
+
+
+
+
+
+            
+
+            </script>
+    </main>
+    
+    
+</body>
+</html>
